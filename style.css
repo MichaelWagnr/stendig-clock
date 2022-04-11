@@ -1,0 +1,44 @@
+:root {
+    --background: black;
+    --color: white;
+}
+
+body {
+    background: var(--background);
+    color: var(--color);
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    font-family: helvetica;
+    font-size: 800%;
+}
+
+.clock {
+    display: grid;
+    grid-template-columns: 2ch 2ch 2ch;
+    column-gap: 30px;
+
+}
+
+.clock div {
+    border-left: 1px solid white;
+}
+
+div.month, div.day {
+    font-size: 25%;
+    margin-bottom: 5rem;
+    border: none;
+}
+
+.month {
+    grid-column-start: 2;
+}
+
+.day {
+    grid-column-start: 3;
+}
+
+
